@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tekdi Technologies</title>
+  <link rel="icon" type="image/png" href="./link icon.png">
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <style>
+    body {
+      background-color: #000080;
+      color: #FFFFFF;
+    }
+
+    .navbar-dark .navbar-brand,
+    .navbar-dark .navbar-nav .nav-link {
+      color: #FFFFFF;
+    }
+
+    h1, h2 {
+      color: #FFFFFF;
+    }
+
+    section {
+      padding: 50px 0;
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .contact-form .form-group {
+      margin-bottom: 20px;
+    }
+
+    .contact-form label {
+      display: block;
+      color: #FFFFFF;
+      margin-bottom: 5px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form input[type="tel"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .contact-form textarea {
+      height: 150px;
+    }
+
+    .contact-form input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    .trusted-by {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .trusted-by img {
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+    }
+
+    .trusted-by img:hover {
+      filter: none;
+    }
+
+    footer {
+      background-color: #000000;
+      color: #FFFFFF;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Tekdi Technologies</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="service.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <div class="container">
+    <section id="home">
+      <h1>Welcome to Tekdi Technologies</h1>
+      <!-- Add your content here -->
+      <img src="icon.png" alt="Tekdi Image" width="500" height="300">
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <!-- Add your content here -->
+      Tekdi was founded in 2006 with an aim to use technology to make a positive impact on society. Since then, we have
+      empowered 100+ organizations with technology solutions across various verticals.
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <!-- Add your content here -->
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-form">
+        <form action="submit-form.php" method="POST">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="number">Phone Number:</label>
+            <input type="tel" id="number" name="number" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <input type="submit" value="Submit" class="btn btn-primary">
+        </form>
+      </div>
+    </section>
+
+    <div class="trusted-by">
+      <h3>Trusted By</h3>
+      <img src="amazon.png" alt="Amazon Logo">
+      <img src="microsoft.png" alt="Microsoft Logo">
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<footer>&copy;2023 Tekdi Technologies. All Rights Reserved.</footer>
+</html>
